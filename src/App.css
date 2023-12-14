@@ -14,3 +14,11 @@
 .page-container img {
     width: 500px;
 }
+
+.active-menu-link {
+    border-bottom: 2px solid red;
+}
+
+.default-menu-link {
+    border-bottom: none;
+}
