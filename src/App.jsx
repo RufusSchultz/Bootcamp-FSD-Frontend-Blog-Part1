@@ -3,7 +3,7 @@ import logo from './assets/logo-white.png';
 import {Link, NavLink, Route, Routes} from "react-router-dom";
 import HomePage from "../src/pages/home/HomePage.jsx";
 import CreateNewBlogPost from "../src/pages/createNewBlogPost/CreateNewBlogPost.jsx";
-import OverviewPage from "../src/pages/overview/OverviewPage.jsx";
+import BlogsOverviewPage from "./pages/blogsOverview/BlogsOverviewPage.jsx";
 import BlogPost from "../src/pages/blogPost/BlogPost.jsx";
 import PageNotFound from "../src/pages/pageNotFound/PageNotFound.jsx";
 
@@ -24,8 +24,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="newPost" element={<CreateNewBlogPost/>}/>
-                <Route path="overview" element={<OverviewPage/>}/>
-                <Route path="posts/:id" element={<BlogPost/>}/>
+                <Route path="overview" element={<BlogsOverviewPage/>}/>
+                <Route path="posts/:postId" element={<BlogPost/>}/>
                 <Route path="*" element={<PageNotFound/>}/>
             </Routes>
         </>
