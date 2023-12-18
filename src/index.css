@@ -5,6 +5,7 @@
   --color-secondary: #2C2F39;
   --color-tertiary: #50535C;
   --color-white: #FFFFFF;
+  --height-header: 100px;
 }
 
 * {
@@ -22,10 +23,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-color: black;
+}
+
+:link {
+  text-decoration: none;
+}
+
+:visited {
+  text-decoration: none;
 }
 
 button, input, select, textarea {
   font-family: inherit;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 h1 {
@@ -55,3 +69,24 @@ h4 {
 p {
   margin-block: 0.5em;
 }
+
+.page-container {
+  width: 100%;
+  height: calc(100vh - var(--height-header));
+  color: white;
+  background: rgb(44,47,57);
+  /*Wil jij ook zo'n coole gradient maken? Deze is gemaakt via https://cssgradient.io/ - kind kan de was doen!*/
+  background: linear-gradient(37deg, rgba(44,47,57,1) 0%, rgba(0,0,0,1) 8%, rgba(80,83,92,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
