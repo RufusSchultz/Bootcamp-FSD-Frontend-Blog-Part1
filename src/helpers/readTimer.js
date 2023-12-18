@@ -1,6 +1,5 @@
 function readTimer(blog) {
     const array = blog.trim().split(" ");
-    console.log(array);
     const readTime = Math.round(array.length / 100 * 0.3);
 
     //leestijd van 0 minuten voelt irreëel.

@@ -2,8 +2,9 @@ import "./PageNotFound.css";
 
 function PageNotFound() {
     return (
-        <div>
-            <h1>404</h1>
+        <div className="page-container">
+            <h1>Error 404</h1>
+            <p>Geen pagina gevonden</p>
         </div>
     )
 }
